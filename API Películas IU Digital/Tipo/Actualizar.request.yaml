@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/tipos/ID_AQUI"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nombre": "Película",
+      "descripcion": "Larga duración"
+    }
+order: 4000

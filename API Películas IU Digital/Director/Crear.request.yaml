@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/directores"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nombres": "Christopher Nolan",
+      "estado": "Activo"
+    }
+order: 3000

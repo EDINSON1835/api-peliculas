@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/directores/ID_AQUI"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nombres": "Christopher Nolan",
+      "estado": "Activo"
+    }
+order: 4000

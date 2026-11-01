@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/productoras"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "nombre": "Warner",
+      "estado": "Activo",
+      "slogan": "Slogan",
+      "descripcion": "Productora"
+    }
+order: 3000

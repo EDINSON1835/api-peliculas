@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/generos/ID_AQUI"
+method: DELETE
+headers:
+  Content-Type: application/json
+order: 5000

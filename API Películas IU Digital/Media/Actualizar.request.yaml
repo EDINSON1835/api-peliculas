@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{baseUrl}}/api/media/ID_AQUI"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "serial": "MED-0001",
+      "titulo": "Oppenheimer",
+      "sinopsis": "Sinopsis",
+      "url": "https://ejemplo.com/oppenheimer",
+      "imagenPortada": "https://ejemplo.com/portada.jpg",
+      "anioEstreno": 2023,
+      "genero": "ID_GENERO",
+      "director": "ID_DIRECTOR",
+      "productora": "ID_PRODUCTORA",
+      "tipo": "ID_TIPO"
+    }
+order: 4000

@@ -1,0 +1,10 @@
+workspace:
+  id: cd28d018-e0b5-4a01-8ee6-c8a2266e60e2
+localResources:
+  collections:
+    - ../API Películas IU Digital
+cloudResources:
+  collections:
+    ../API Películas IU Digital: 59230714-0b5811b0-08dc-4040-84ec-60aabab168a4
+  globals:
+    ../postman/globals/workspace.globals.yaml: cc77f77d-1b9d-4d21-85d9-47fc77f4271e
