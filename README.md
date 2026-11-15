@@ -3,7 +3,7 @@ Ingeniería Web II · Evidencia de Aprendizaje: API REST con Node.js
 
 API REST (Node.js + Express + MongoDB/Mongoose) para gestionar **Género, Director, Productora, Tipo y Media (películas y series)**.
 
-**Integrantes:** _(escribir nombres del equipo, mínimo 2 y máximo 4)_
+**Integrantes:** JUAN DAVID CALLE CORREA_EDINSON MENA ARROYO
 
 ## Requisitos
 - Node.js 18+ 
