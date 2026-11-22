@@ -151,7 +151,7 @@ export default function CrudPage({ titulo, singular, recurso, columnas, campos, 
   return (
     <div className="container py-4">
       <div className="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
-        <h2 className="mb-0">{titulo}</h2>
+        <h2 className="page-title mb-0">{titulo}</h2>
         <div className="d-flex gap-2">
           <input
             className="form-control"
@@ -202,7 +202,7 @@ export default function CrudPage({ titulo, singular, recurso, columnas, campos, 
       {abierto && (
         <>
           <div className="modal-backdrop-custom" onClick={cerrar} />
-          <div className="modal-custom" role="dialog" aria-modal="true">
+          <div className="modal d-block" role="dialog" aria-modal="true" onClick={(e) => e.target === e.currentTarget && cerrar()}>
             <div className="modal-dialog modal-lg modal-dialog-centered">
               <form className="modal-content" onSubmit={guardar}>
                 <div className="modal-header">

@@ -1,7 +1,78 @@
-body { background: #f5f6fa; }
-.navbar-brand span { color: #e5484d; }
+:root {
+  --azul: #1f3a5f;
+  --azul-oscuro: #17304f;
+  --dorado: #b8955a;
+  --fondo: #f4f6fb;
+}
+
+body {
+  background: var(--fondo);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #212529;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+}
+
+/* ---------- Barra superior ---------- */
+.navbar-custom {
+  background: var(--azul);
+  border-bottom: 4px solid var(--dorado);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
+.navbar-custom .nav-link { color: rgba(255, 255, 255, .8); padding: .6rem .9rem; }
+.navbar-custom .nav-link:hover { color: #fff; }
+.navbar-custom .nav-link.active { color: #fff; font-weight: 600; }
+
+/* ---------- Títulos ---------- */
+.page-title {
+  color: var(--azul);
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: .4rem;
+  border-bottom: 3px solid var(--dorado);
+}
+.titulo-home { color: var(--azul); font-weight: 700; }
+
+/* ---------- Botones y enlaces en azul marino ---------- */
+.btn-primary {
+  --bs-btn-bg: var(--azul);
+  --bs-btn-border-color: var(--azul);
+  --bs-btn-hover-bg: var(--azul-oscuro);
+  --bs-btn-hover-border-color: var(--azul-oscuro);
+  --bs-btn-active-bg: var(--azul-oscuro);
+  --bs-btn-active-border-color: var(--azul-oscuro);
+  --bs-btn-disabled-bg: var(--azul);
+  --bs-btn-disabled-border-color: var(--azul);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--azul);
+  --bs-btn-border-color: var(--azul);
+  --bs-btn-hover-bg: var(--azul);
+  --bs-btn-hover-border-color: var(--azul);
+  --bs-btn-active-bg: var(--azul);
+  --bs-btn-active-border-color: var(--azul);
+}
+.text-primary { color: var(--azul) !important; }
+a:not(.nav-link):not(.navbar-brand):not(.btn) { color: var(--azul); }
+a:not(.nav-link):not(.navbar-brand):not(.btn):hover { color: var(--dorado); }
+.navbar-brand, .navbar-brand:hover { color: #fff; }
+
+/* ---------- Tarjetas, tabla y formularios ---------- */
+.card {
+  border: 1px solid #dbe3ef;
+  border-radius: .75rem;
+  border-top: 4px solid var(--azul);
+}
+.table-dark { --bs-table-bg: var(--azul); --bs-table-border-color: var(--azul-oscuro); }
+.form-control:focus, .form-select:focus {
+  border-color: var(--azul);
+  box-shadow: 0 0 0 .2rem rgba(31, 58, 95, .15);
+}
+.modal-content { border: 0; border-top: 5px solid var(--azul); border-radius: .75rem; }
+
+/* ---------- Piezas internas de la aplicación ---------- */
 .portada-mini { width: 48px; height: 68px; object-fit: cover; border-radius: 4px; background: #dee2e6; }
 .modal-backdrop-custom { position: fixed; inset: 0; background: rgba(0, 0, 0, .5); z-index: 1040; }
 .modal-custom { position: fixed; inset: 0; z-index: 1050; overflow-y: auto; }
-.tarjeta-modulo { transition: transform .15s, box-shadow .15s; }
-.tarjeta-modulo:hover { transform: translateY(-3px); box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .12); }

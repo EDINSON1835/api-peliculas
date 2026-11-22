@@ -6,16 +6,16 @@ const enlaces = [
   { to: '/directores', texto: 'Directores' },
   { to: '/productoras', texto: 'Productoras' },
   { to: '/tipos', texto: 'Tipos' },
-  { to: '/media', texto: 'Películas y series' },
+  { to: '/media', texto: 'Películas y Series' },
 ];
 
 export default function Navbar() {
   const [abierto, setAbierto] = useState(false);
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
       <div className="container">
         <NavLink className="navbar-brand fw-bold" to="/" onClick={() => setAbierto(false)}>
-          IU Digital <span>Películas</span>
+          🎬 Gestión de Películas y Series
         </NavLink>
         <button className="navbar-toggler" type="button" onClick={() => setAbierto(!abierto)} aria-label="Menú">
           <span className="navbar-toggler-icon" />
@@ -26,7 +26,7 @@ export default function Navbar() {
               <li className="nav-item" key={e.to}>
                 <NavLink
                   to={e.to}
-                  className={({ isActive }) => `nav-link ${isActive ? 'active fw-semibold' : ''}`}
+                  className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                   onClick={() => setAbierto(false)}
                 >
                   {e.texto}
